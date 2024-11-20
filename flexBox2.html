@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar elementos con Flexbox</title>
+    <style type="text/css">
+        *{ margin: 0;}
+        header{
+            background-image: url('https://turismoycultura.alcazardesanjuan.es/wp-content/uploads/2023/03/DSC08617-scaled.jpg');
+            background-size:100% 100%;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section#sec1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        section#sec2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: lightblue;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+        a{
+        text-decoration: none;
+        color:  #c1610d;
+        border: solid 3px #f49e54;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+
+       }
+       hr{margin-bottom: 20px;}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div style="text-align: center; text-shadow: 2px 2px 2px lightgray;">
+            <h1>Visite la Mancha</h1>
+            <h2>Tierra de Quijotes</h2>
+        </div>
+    </header>
+    <section id="sec1">
+        <p style="font-style: italic; color: rgb(213, 86, 40); font-weight: bold;">Una experiencia inolvidable</p>
+    </section>
+    <section id="sec2">
+        <img src="https://www.rutadelvinodelamancha.com/wp-content/uploads/2018/10/Molinos-Alca%CC%81zar-de-San-Juan_-.jpg" alt="">
+    </section>
+    <hr>
+    <a href="index.html">Ir a Flexbox I</a>
+</body>
+</html>
